@@ -45,7 +45,7 @@ Action<IConfigContext> doConfig = (context) =>
     KeybindKey = Keys.P,
 	MenuTitle = "workspacer.ActionMenu",
     MenuHeight = 50,
-    MenuWidth = 500,
+    MenuWidth = 600,
     FontSize = 12,
 	FontName = "Inconsolata Nerd Font Mono",
 });
