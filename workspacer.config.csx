@@ -18,7 +18,7 @@ Action<IConfigContext> doConfig = (context) =>
 	// Configure layouts
 	context.DefaultLayouts = () => new ILayoutEngine[] { new FullLayoutEngine(), new TallLayoutEngine(), new HorzLayoutEngine(), new VertLayoutEngine() };
 
-	// Configure the Workspacer bar.
+	// Configure the Workspacer bar
 	context.AddBar(new BarPluginConfig()
 	{
 	BarTitle = "workspacer.Bar",
@@ -30,15 +30,15 @@ Action<IConfigContext> doConfig = (context) =>
 	RightWidgets = () => new IBarWidget[] { new TimeWidget(1000, "yyyy/MM/dd  HH:mm"), new TextWidget("\uf60b"), new BatteryWidget(), new TextWidget("\uf878"), new ActiveLayoutWidget() },
 	});
 
-	// Configure focus indicator.
+	// Configure focus indicator
     context.AddFocusIndicator(new FocusIndicatorPluginConfig() {
 	BorderColor = Color.Teal,
 	});
 
-    // Configure Modifier key
+    // Configure modifier key
 	var mod = KeyModifiers.Alt;
 
-	// Configure action menu.
+	// Configure action menu
     var actionMenu = context.AddActionMenu(new ActionMenuPluginConfig() {
     RegisterKeybind = true,
 	KeybindMod = mod,
@@ -50,7 +50,7 @@ Action<IConfigContext> doConfig = (context) =>
 	FontName = "Inconsolata Nerd Font Mono",
 });
 
-    // Create 9 workspaces.
+    // Create 9 workspaces
     context.WorkspaceContainer.CreateWorkspaces("1", "2", "3", "4", "5", "6", "7", "8", "9");
 };
 
