@@ -1,0 +1,171 @@
+#r "C:\Program Files\workspacer\workspacer.Shared.dll"
+#r "C:\Program Files\workspacer\plugins\workspacer.Bar\workspacer.Bar.dll"
+#r "C:\Program Files\workspacer\plugins\workspacer.ActionMenu\workspacer.ActionMenu.dll"
+#r "C:\Program Files\workspacer\plugins\workspacer.FocusIndicator\workspacer.FocusIndicator.dll"
+
+using System;
+using workspacer;
+using workspacer.Bar;
+using workspacer.Bar.Widgets;
+using workspacer.ActionMenu;
+using workspacer.FocusIndicator;
+
+Action<IConfigContext> doConfig = (context) =>
+{
+	// Configure layouts
+	context.DefaultLayouts = () => new ILayoutEngine[] { new FullLayoutEngine(), new TallLayoutEngine() };
+
+	// Configure the Workspacer bar.
+	context.AddBar(new BarPluginConfig()
+	{
+	BarTitle = "workspacer.Bar",
+	BarHeight = 20,
+	FontName = "UbuntuCondensed Nerd Font",
+	FontSize = 12,
+	DefaultWidgetForeground = Color.White,
+    DefaultWidgetBackground = Color.Black,
+	RightWidgets = () => new IBarWidget[] {new TimeWidget(1000, "yyyy/MM/dd  HH:mm"), new ActiveLayoutWidget()},
+	});
+
+	// Configure focus indicator.
+    context.AddFocusIndicator(new FocusIndicatorPluginConfig() {
+	BorderColor = Color.Teal,
+	});
+
+	var mod = KeyModifiers.Alt;
+
+	// Configure action menu.
+    var actionMenu = context.AddActionMenu(new ActionMenuPluginConfig() {
+    RegisterKeybind = true,
+	KeybindMod = mod,
+    KeybindKey = Keys.P,
+	MenuTitle = "workspacer.ActionMenu",
+    MenuHeight = 50,
+    MenuWidth = 500,
+    FontSize = 12,
+});
+  	
+	// Create workspaces.
+    context.WorkspaceContainer.CreateWorkspaces("1", "2", "3", "4", "5", "6", "7", "8", "9");
+
+	// Enabling the use of the right Alt key for:
+	// 1. Switching to workspaces.	
+	context.Keybinds.Subscribe(mod, Keys.D1,
+                () => context.Workspaces.SwitchToWorkspace(0), "switch to workspace 1");
+				
+	context.Keybinds.Subscribe(mod, Keys.D2,
+                () => context.Workspaces.SwitchToWorkspace(1), "switch to workspace 2");
+	
+	context.Keybinds.Subscribe(mod, Keys.D3,
+                () => context.Workspaces.SwitchToWorkspace(2), "switch to workspace 3");
+				
+	context.Keybinds.Subscribe(mod, Keys.D4,
+                () => context.Workspaces.SwitchToWorkspace(3), "switch to workspace 4");
+				
+	context.Keybinds.Subscribe(mod, Keys.D5,
+                () => context.Workspaces.SwitchToWorkspace(4), "switch to workspace 5");
+				
+	context.Keybinds.Subscribe(mod, Keys.D6,
+                () => context.Workspaces.SwitchToWorkspace(5), "switch to workspace 6");
+				
+	context.Keybinds.Subscribe(mod, Keys.D7,
+                () => context.Workspaces.SwitchToWorkspace(6), "switch to workspace 7");
+				
+	context.Keybinds.Subscribe(mod, Keys.D8,
+                () => context.Workspaces.SwitchToWorkspace(7), "switch to workspace 8");
+				
+	context.Keybinds.Subscribe(mod, Keys.D9,
+                () => context.Workspaces.SwitchToWorkspace(8), "switch to workspace 9");
+	
+	// 2. Quitting and restarting workspacer.	
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.Q, context.Quit, "quit workspacer");
+
+    context.Keybinds.Subscribe(mod, Keys.Q, context.Restart, "restart workspacer");
+	
+	//3. Toggling enable/disable workspacer.	
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.E,
+                () => context.Enabled = !context.Enabled, "toggle enable/disable");
+	
+
+	//4. Closing focused window.
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.C,
+                () => context.Workspaces.FocusedWorkspace.CloseFocusedWindow(), "close focused window");
+	
+	//5. Switching layouts.
+	context.Keybinds.Subscribe(mod, Keys.Space,
+                () => context.Workspaces.FocusedWorkspace.NextLayoutEngine(), "next layout");
+
+    context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.Space,
+                () => context.Workspaces.FocusedWorkspace.PreviousLayoutEngine(), "previous layout");
+	
+	//6. Toggle tiling for focused window.
+	context.Keybinds.Subscribe(mod, Keys.T,
+                () => context.Windows.ToggleFocusedWindowTiling(), "toggle tiling for focused window");
+	
+	//7. Move focused window to numbered workspace.
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.D1,
+                () => context.Workspaces.MoveFocusedWindowToWorkspace(0), "switch focused window to workspace 1");
+
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.D2,
+		() => context.Workspaces.MoveFocusedWindowToWorkspace(1), "switch focused window to workspace 2");
+
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.D3,
+		() => context.Workspaces.MoveFocusedWindowToWorkspace(2), "switch focused window to workspace 3");
+
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.D4,
+		() => context.Workspaces.MoveFocusedWindowToWorkspace(3), "switch focused window to workspace 4");
+
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.D5,
+		() => context.Workspaces.MoveFocusedWindowToWorkspace(4), "switch focused window to workspace 5");
+		
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.D6,
+		() => context.Workspaces.MoveFocusedWindowToWorkspace(5), "switch focused window to workspace 6");
+
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.D7,
+		() => context.Workspaces.MoveFocusedWindowToWorkspace(6), "switch focused window to workspace 7");
+		
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.D8,
+		() => context.Workspaces.MoveFocusedWindowToWorkspace(7), "switch focused window to workspace 8");
+	
+	context.Keybinds.Subscribe(mod | KeyModifiers.RShift, Keys.D9,
+		() => context.Workspaces.MoveFocusedWindowToWorkspace(8), "switch focused window to workspace 9");
+	
+	context.Keybinds.Subscribe(mod, Keys.Oemtilde,
+		() => context.Workspaces.SwitchToLastFocusedWorkspace(), "switch to last focused workspace");
+	
+	//8. Changle focus.
+	context.Keybinds.Subscribe(mod, Keys.N,
+                () => context.Workspaces.FocusedWorkspace.ResetLayout(), "reset layout");
+
+	context.Keybinds.Subscribe(mod, Keys.J,
+		() => context.Workspaces.FocusedWorkspace.FocusNextWindow(), "focus next window");
+
+	context.Keybinds.Subscribe(mod, Keys.K,
+		() => context.Workspaces.FocusedWorkspace.FocusPreviousWindow(), "focus previous window");
+
+	context.Keybinds.Subscribe(mod, Keys.M,
+		() => context.Workspaces.FocusedWorkspace.FocusPrimaryWindow(), "focus primary window");
+
+	context.Keybinds.Subscribe(mod, Keys.Enter,
+		() => context.Workspaces.FocusedWorkspace.SwapFocusAndPrimaryWindow(), "swap focus and primary window");
+		
+	context.Keybinds.Subscribe(mod | KeyModifiers.LShift, Keys.J,
+                () => context.Workspaces.FocusedWorkspace.SwapFocusAndNextWindow(), "swap focus and next window");
+
+	context.Keybinds.Subscribe(mod | KeyModifiers.LShift, Keys.K,
+		() => context.Workspaces.FocusedWorkspace.SwapFocusAndPreviousWindow(), "swap focus and previous window");
+
+	context.Keybinds.Subscribe(mod, Keys.H,
+		() => context.Workspaces.FocusedWorkspace.ShrinkPrimaryArea(), "shrink primary area");
+
+	context.Keybinds.Subscribe(mod, Keys.L,
+		() => context.Workspaces.FocusedWorkspace.ExpandPrimaryArea(), "expand primary area");
+		
+	//9. Increment/decrement focused window.
+	context.Keybinds.Subscribe(mod, Keys.Oemcomma,
+                () => context.Workspaces.FocusedWorkspace.IncrementNumberOfPrimaryWindows(), "increment # primary windows");
+
+	context.Keybinds.Subscribe(mod, Keys.OemPeriod,
+		() => context.Workspaces.FocusedWorkspace.DecrementNumberOfPrimaryWindows(), "decrement # primary windows");
+};
+return doConfig;

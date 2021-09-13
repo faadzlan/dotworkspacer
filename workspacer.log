@@ -1,0 +1,324 @@
+2021-09-13 12:57:57.1334|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (16,107): error CS0246: The type or namespace name 'DwindleLayoutEngine' could not be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 12:59:35.9205|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D1` is already bound to action: `switch to workspace 1`
+2021-09-13 12:59:35.9519|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D2` is already bound to action: `switch to workspace 2`
+2021-09-13 12:59:35.9706|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D3` is already bound to action: `switch to workspace 3`
+2021-09-13 12:59:35.9895|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D4` is already bound to action: `switch to workspace 4`
+2021-09-13 12:59:36.0086|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D5` is already bound to action: `switch to workspace 5`
+2021-09-13 12:59:36.0271|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D6` is already bound to action: `switch to workspace 6`
+2021-09-13 12:59:36.0454|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D7` is already bound to action: `switch to workspace 7`
+2021-09-13 12:59:36.0811|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D8` is already bound to action: `switch to workspace 8`
+2021-09-13 12:59:36.1281|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D9` is already bound to action: `switch to workspace 9`
+2021-09-13 12:59:36.1709|ERROR|workspacer.KeybindManager| The Key Combination `Alt-Q` is already bound to action: `restart workspacer`
+2021-09-13 12:59:36.2143|ERROR|workspacer.KeybindManager| The Key Combination `Alt-Space` is already bound to action: `next layout`
+2021-09-13 12:59:36.2504|ERROR|workspacer.KeybindManager| The Key Combination `Alt-T` is already bound to action: `toggle tiling for focused window`
+2021-09-13 12:59:36.2850|ERROR|workspacer.KeybindManager| The Key Combination `Alt-Oemtilde` is already bound to action: `switch to last focused workspace`
+2021-09-13 12:59:36.3133|ERROR|workspacer.KeybindManager| The Key Combination `Alt-N` is already bound to action: `reset layout`
+2021-09-13 12:59:36.3605|ERROR|workspacer.KeybindManager| The Key Combination `Alt-J` is already bound to action: `focus next window`
+2021-09-13 12:59:36.4026|ERROR|workspacer.KeybindManager| The Key Combination `Alt-K` is already bound to action: `focus previous window`
+2021-09-13 12:59:36.4533|ERROR|workspacer.KeybindManager| The Key Combination `Alt-M` is already bound to action: `focus primary window`
+2021-09-13 12:59:36.5134|ERROR|workspacer.KeybindManager| The Key Combination `Alt-Enter` is already bound to action: `swap focus and primary window`
+2021-09-13 12:59:36.5486|ERROR|workspacer.KeybindManager| The Key Combination `LShift, Alt-J` is already bound to action: `swap focus and next window`
+2021-09-13 12:59:36.5833|ERROR|workspacer.KeybindManager| The Key Combination `LShift, Alt-K` is already bound to action: `swap focus and previous window`
+2021-09-13 12:59:36.6357|ERROR|workspacer.KeybindManager| The Key Combination `Alt-H` is already bound to action: `shrink primary area`
+2021-09-13 12:59:36.6844|ERROR|workspacer.KeybindManager| The Key Combination `Alt-L` is already bound to action: `expand primary area`
+2021-09-13 12:59:36.7293|ERROR|workspacer.KeybindManager| The Key Combination `Alt-Oemcomma` is already bound to action: `increment # primary windows`
+2021-09-13 12:59:36.7835|ERROR|workspacer.KeybindManager| The Key Combination `Alt-OemPeriod` is already bound to action: `decrement # primary windows`
+2021-09-13 13:00:58.5428|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D1` is already bound to action: `switch to workspace 1`
+2021-09-13 13:00:58.5950|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D2` is already bound to action: `switch to workspace 2`
+2021-09-13 13:00:58.6399|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D3` is already bound to action: `switch to workspace 3`
+2021-09-13 13:00:58.6730|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D4` is already bound to action: `switch to workspace 4`
+2021-09-13 13:00:58.7161|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D5` is already bound to action: `switch to workspace 5`
+2021-09-13 13:00:58.7621|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D6` is already bound to action: `switch to workspace 6`
+2021-09-13 13:00:58.8198|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D7` is already bound to action: `switch to workspace 7`
+2021-09-13 13:00:58.8647|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D8` is already bound to action: `switch to workspace 8`
+2021-09-13 13:00:58.9038|ERROR|workspacer.KeybindManager| The Key Combination `Alt-D9` is already bound to action: `switch to workspace 9`
+2021-09-13 13:00:58.9502|ERROR|workspacer.KeybindManager| The Key Combination `Alt-Q` is already bound to action: `restart workspacer`
+2021-09-13 13:00:58.9854|ERROR|workspacer.KeybindManager| The Key Combination `Alt-Space` is already bound to action: `next layout`
+2021-09-13 13:00:59.0168|ERROR|workspacer.KeybindManager| The Key Combination `Alt-T` is already bound to action: `toggle tiling for focused window`
+2021-09-13 13:00:59.0522|ERROR|workspacer.KeybindManager| The Key Combination `Alt-Oemtilde` is already bound to action: `switch to last focused workspace`
+2021-09-13 13:00:59.0982|ERROR|workspacer.KeybindManager| The Key Combination `Alt-N` is already bound to action: `reset layout`
+2021-09-13 13:00:59.1355|ERROR|workspacer.KeybindManager| The Key Combination `Alt-J` is already bound to action: `focus next window`
+2021-09-13 13:00:59.1715|ERROR|workspacer.KeybindManager| The Key Combination `Alt-K` is already bound to action: `focus previous window`
+2021-09-13 13:00:59.2230|ERROR|workspacer.KeybindManager| The Key Combination `Alt-M` is already bound to action: `focus primary window`
+2021-09-13 13:00:59.2718|ERROR|workspacer.KeybindManager| The Key Combination `Alt-Enter` is already bound to action: `swap focus and primary window`
+2021-09-13 13:00:59.3218|ERROR|workspacer.KeybindManager| The Key Combination `LShift, Alt-J` is already bound to action: `swap focus and next window`
+2021-09-13 13:00:59.3615|ERROR|workspacer.KeybindManager| The Key Combination `LShift, Alt-K` is already bound to action: `swap focus and previous window`
+2021-09-13 13:00:59.4142|ERROR|workspacer.KeybindManager| The Key Combination `Alt-H` is already bound to action: `shrink primary area`
+2021-09-13 13:00:59.4741|ERROR|workspacer.KeybindManager| The Key Combination `Alt-L` is already bound to action: `expand primary area`
+2021-09-13 13:00:59.5533|ERROR|workspacer.KeybindManager| The Key Combination `Alt-Oemcomma` is already bound to action: `increment # primary windows`
+2021-09-13 13:00:59.6222|ERROR|workspacer.KeybindManager| The Key Combination `Alt-OemPeriod` is already bound to action: `decrement # primary windows`
+2021-09-13 13:32:31.5384|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (41,15): error CS0103: The name 'mod' does not exist in the current context
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 13:33:03.5480|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (41,15): error CS0103: The name 'mod' does not exist in the current context
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 13:51:29.1428|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (19,124): error CS1526: A new expression requires an argument list or (), [], or {} after type
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 13:51:57.1934|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (19,103): error CS0144: Cannot create an instance of the abstract type or interface 'PaneLayoutEngine'
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 13:53:12.4644|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (19,103): error CS0144: Cannot create an instance of the abstract type or interface 'PaneLayoutEngine'
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 13:53:30.9114|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (19,103): error CS0144: Cannot create an instance of the abstract type or interface 'PaneLayoutEngine'
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 13:54:57.4467|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (19,83): error CS0246: The type or namespace name 'DwindleLayoutEngine' could not be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 14:59:47.7240|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,49): error CS1003: Syntax error, ',' expected
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:00:12.9373|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,49): error CS1003: Syntax error, ',' expected
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:00:48.4204|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,41): error CS0029: Cannot implicitly convert type 'string' to 'workspacer.Bar.IBarWidget'
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:01:14.0931|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,41): error CS0029: Cannot implicitly convert type 'string' to 'workspacer.Bar.IBarWidget'
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:07:13.1040|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,46): error CS1729: 'TimeWidget' does not contain a constructor that takes 3 arguments
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:10:28.7712|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,46): error CS1729: 'TimeWidget' does not contain a constructor that takes 3 arguments
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:12:50.5646|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,42): error CS0029: Cannot implicitly convert type 'string' to 'workspacer.Bar.IBarWidget'
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:19:30.4950|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,26): error CS4010: Cannot convert async lambda expression to delegate type 'Func<IBarWidget[]>'. An async lambda expression may return void, Task or Task<T>, none of which are convertible to 'Func<IBarWidget[]>'.
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:20:20.0723|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,127): error CS0103: The name 'i' does not exist in the current context
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:21:29.5203|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,26): error CS4010: Cannot convert async lambda expression to delegate type 'Func<IBarWidget[]>'. An async lambda expression may return void, Task or Task<T>, none of which are convertible to 'Func<IBarWidget[]>'.
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:22:01.8193|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,116): error CS7036: There is no argument given that corresponds to the required formal parameter 'text' of 'TextWidget.TextWidget(string)'
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:23:06.5915|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,127): error CS1503: Argument 1: cannot convert from 'char' to 'string'
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:23:34.4708|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,26): error CS4010: Cannot convert async lambda expression to delegate type 'Func<IBarWidget[]>'. An async lambda expression may return void, Task or Task<T>, none of which are convertible to 'Func<IBarWidget[]>'.
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:24:38.1668|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,26): error CS4010: Cannot convert async lambda expression to delegate type 'Func<IBarWidget[]>'. An async lambda expression may return void, Task or Task<T>, none of which are convertible to 'Func<IBarWidget[]>'.
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
+2021-09-13 15:25:47.6517|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (30,26): error CS4010: Cannot convert async lambda expression to delegate type 'Func<IBarWidget[]>'. An async lambda expression may return void, Task or Task<T>, none of which are convertible to 'Func<IBarWidget[]>'.
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context)
+   at workspacer.workspacer.Start()
+   at workspacer.Program.Run()
+   at workspacer.Program.Main(String[] args)
