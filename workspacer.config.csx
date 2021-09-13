@@ -50,6 +50,7 @@ Action<IConfigContext> doConfig = (context) =>
 	FontName = "Inconsolata Nerd Font Mono",
 });
 
+    // Create 9 workspaces.
     context.WorkspaceContainer.CreateWorkspaces("1", "2", "3", "4", "5", "6", "7", "8", "9");
 };
 
