@@ -16,7 +16,7 @@ Action<IConfigContext> doConfig = (context) =>
     //context.Branch = Branch.None
 
 	// Configure layouts
-	context.DefaultLayouts = () => new ILayoutEngine[] { new FullLayoutEngine(), new TallLayoutEngine(), new HorzLayoutEngine(), new VertLayoutEngine() };
+	// context.DefaultLayouts = () => new ILayoutEngine[] { new FullLayoutEngine(), new TallLayoutEngine(), new HorzLayoutEngine(), new VertLayoutEngine() };
 
 	// Configure the Workspacer bar
 	context.AddBar(new BarPluginConfig()
