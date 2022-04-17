@@ -16,7 +16,7 @@ Action<IConfigContext> doConfig = (context) =>
     //context.Branch = Branch.None
 
 	// Configure layouts
-	// context.DefaultLayouts = () => new ILayoutEngine[] { new FullLayoutEngine(), new TallLayoutEngine(), new HorzLayoutEngine(), new VertLayoutEngine() };
+	// context.DefaultLayouts = () => new ILayoutEngine[] { new FullLayoutEngine(), new TallLayoutEngine()};
 
 	// Configure the Workspacer bar
 	context.AddBar(new BarPluginConfig()
@@ -27,7 +27,7 @@ Action<IConfigContext> doConfig = (context) =>
 	FontSize = 12,
 	DefaultWidgetForeground = Color.White,
     DefaultWidgetBackground = Color.Black,
-	RightWidgets = () => new IBarWidget[] { new TimeWidget(1000, "yyyy/MM/dd  HH:mm"), new TextWidget("\uf60b"), new BatteryWidget(), new TextWidget("\uf878"), new ActiveLayoutWidget() },
+	RightWidgets = () => new IBarWidget[] { new TimeWidget(1000, "dddd yyyy/MM/dd  HH:mm"), new TextWidget("\uf60b"), new BatteryWidget(), new TextWidget("\uf878"), new ActiveLayoutWidget() },
 	});
 
 	// Configure focus indicator
