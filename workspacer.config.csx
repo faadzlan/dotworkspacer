@@ -27,6 +27,10 @@ Action<IConfigContext> doConfig = (context) =>
 	FontSize = 12,
 	DefaultWidgetForeground = Color.White,
     DefaultWidgetBackground = Color.Black,
+	LeftWidgets = () => new IBarWidget[]
+	{
+		new WorkspaceWidget(), new TextWidget(": "), new TitleWidget() {IsShortTitle = true}
+	},
 	RightWidgets = () => new IBarWidget[] { new TextWidget("\uf073"), new TimeWidget(1000, "dddd yyyy/MM/dd  HH:mm"), new TextWidget("\uf60b"), new BatteryWidget(), new TextWidget("\uf878"), new ActiveLayoutWidget() },
 	});
 
