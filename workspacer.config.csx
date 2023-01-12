@@ -2,13 +2,17 @@
 #r "C:\Program Files\workspacer\plugins\workspacer.Bar\workspacer.Bar.dll"
 #r "C:\Program Files\workspacer\plugins\workspacer.ActionMenu\workspacer.ActionMenu.dll"
 #r "C:\Program Files\workspacer\plugins\workspacer.FocusIndicator\workspacer.FocusIndicator.dll"
+#r "C:\Program Files\workspacer\plugins\workspacer.Gap\workspacer.Gap.dll"
 
 using System;
 using workspacer;
 using workspacer.Bar;
 using workspacer.ActionMenu;
-using workspacer.Bar.Widgets;
 using workspacer.FocusIndicator;
+using workspacer.Gap;
+using workspacer.Bar.Widgets;
+using System.Collections.Generic;
+using System.Linq;
 
 Action<IConfigContext> doConfig = (context) =>
 {
@@ -22,7 +26,7 @@ Action<IConfigContext> doConfig = (context) =>
 	context.AddBar(new BarPluginConfig()
 	{
 	BarTitle = "workspacer.Bar",
-	BarHeight = 20,
+	BarHeight = 22,
 	FontName = "UbuntuCondensed Nerd Font",
 	FontSize = 12,
 	DefaultWidgetForeground = Color.White,
