@@ -22,6 +22,12 @@ Action<IConfigContext> doConfig = (context) =>
 	// Configure layouts
 	// context.DefaultLayouts = () => new ILayoutEngine[] { new FullLayoutEngine(), new TallLayoutEngine()};
 
+	// Custom filter
+	context.WindowRouter.AddFilter((window) => !window.Title.Contains("Ubuntu"));
+	context.WindowRouter.AddFilter((window) => !window.Title.Contains("Snippet"));
+	context.WindowRouter.AddFilter((window) => !window.Title.Contains("Lintalist"));
+	context.WindowRouter.AddFilter((window) => !window.Title.Contains("Spy"));
+
 	// Configure the Workspacer bar
 	context.AddBar(new BarPluginConfig()
 	{
